@@ -1,0 +1,87 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration - SL academy</title>
+    <link href="form.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('images/form.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+	 <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Course Registration Form</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Highest Education Level *</label>
+                <select id="education" name="education" required>
+                    <option value="">Select your education level</option>
+                    <option value="high-school">High School</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="phd">Ph.D.</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Interested Course *</label>
+                <select id="course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="artificial-intelligence">Artificial Intelligence</option>
+                    <option value="cyber-security">Cyber Security</option>
+                    <option value="cloud-computing">Cloud Computing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Previous Programming Experience</label>
+                <select id="experience" name="experience">
+                    <option value="none">No Experience</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Why do you want to join this course? *</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+    </div>
+</body>
+</html>
